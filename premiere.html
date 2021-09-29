@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premiere</title>
+    <link rel="stylesheet" href="./css/premiere.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navegacion navegacion-principal">
+            <a href="modelos.html" class="navegacion__enlace">models</a>
+            <a href="nosotros.html" class="navegacion__enlace">nosotros</a>
+            <a href="#" class="navegacion__enlace">configurator</a>
+            <a href="index.html" class="navegacion__enlace"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-motorbike" width="100" height="100" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="5" cy="16" r="3" />
+                    <circle cx="19" cy="16" r="3" />
+                    <path d="M7.5 14h5l4 -4h-10.5m1.5 4l4 -4" />
+                    <path d="M13 6h2l1.5 3l2 4" />
+                </svg>
+            </a>
+            <a href="#" class="navegacion__enlace">dealer locator</a>
+            <a href="#" class="navegacion__enlace">test ride</a>
+            <a href="#" class="navegacion__enlace">shop</a>
+        </nav>
+    </header>
+    <main class="margin contenedor">
+        <h1>Ducati World Première 2022</h1>
+
+        <p>
+            Panigale V2 Bayliss 1st Championship 20th Anniversary: a special version
+            ready to excite Ducatisti all over the world. Stay tuned!
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/k8ONopFYIjc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    </main>
+
+    <section class="margin contenedor">
+        <h2>This is our story: "Ducati"</h1>
+            <audio
+                src="https://res.cloudinary.com/dacorreap/video/upload/v1628301075/yt1s.com_-_This_is_our_story_gb2oxu.mp3"
+                controls></audio>
+    </section>
+
+    <section class="margin contenedor">
+        <h2> Ducati Power</h2>
+
+        <video width="560" height="315" controls
+            src="https://res.cloudinary.com/dacorreap/video/upload/v1628301045/Extended_Raw_Sound_Clip___Ducati_848_1098_1198_Toce_Exhaust_video_by_TST_Industries_fqaqqt.mp4"></video>
+    </section>
+
+    <section class="margin contenedor">
+        <form class="formulario">
+            <fieldset>
+                <legend>Formulario de registro</legend>
+
+                <div class="contenedor-campos">
+
+                    <div class="campo">
+                        <label for="">Nombre de usuario</label>
+                        <br>
+                        <input class="input-text" type="text" name="usuario" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="">Contraseña</label>
+                        <br>
+                        <input class="input-text" type="password" name="contraseña" required minlength="5">
+                    </div>
+
+                    <div class="campo">
+                        <label for="">Correo</label>
+                        <br>
+                        <input class="input-text" type="email" name="correo" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="">Edad</label>
+                        <br>
+                        <input class="input-text" type="number" name="edad" required min="18">
+                    </div>
+
+                    <div class="campo">
+                        <label for="">URL del perfil de facebook</label>
+                        <br>
+                        <input class="input-text" type="url" name="fb">
+                    </div>
+
+                    <div class="campo">
+                        <label for="">Fecha de nacimiento</label>
+                        <br>
+                        <input class="input-text" type="date" name="nacimiento" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="">País de nacimiento</label>
+                        <br>
+                        <select name="pais" id="" required>
+                            <option value="01">Argentina</option>
+                            <option value="02">Bolivia</option>
+                            <option value="03">Brasil</option>
+                            <option value="04">Chile</option>
+                            <option value="04" selected>Colombia</option>
+                            <option value="06">Ecuador</option>
+                            <option value="07">Paraguay</option>
+                            <option value="08">Perú</option>
+                            <option value="09">Uruguay</option>
+                            <option value="10">Venezuela</option>
+                        </select>
+                    </div>
+
+                    <div class="campo rol">
+                        <label for="">Rol</label>
+                        <br>
+                        <input type="radio" name="rol" value="des" id="des" required>
+                        <label for="des">Desarrollador</label>
+                        <input type="radio" name="rol" value="dis" id="dis" required>
+                        <label for="dis">Diseñador</label>
+                    </div>
+
+                    <div class="campo">
+                        <label for="">Color favorito</label>
+                        <br>
+                        <input class="input-text" type="color" name="color">
+                    </div>
+
+                </div>
+
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="Registrarse" />
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <footer class="footer centrar-texto">
+        <div>
+            <h2>DUCATI</h2>
+            <div class="footer__lista centrar-texto">
+                <a href="#" class="footer__lista--color">terms of use</a>
+                <a href="#" class="footer__lista--color">privacy information</a>
+                <a href="#" class="footer__lista--color">cookies information</a>
+            </div>
+        </div>
+        <div>
+            <p>
+                Copyright © 2021 Ducati Motor Holding S.p.A. – A Sole Shareholder
+                Company - A Company subject to the Management and Coordination
+                activities of AUDI AG. All rights reserved. VAT 05113870967
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
